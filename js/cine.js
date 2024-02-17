@@ -1,9 +1,4 @@
 //fetch javascript
-// Función para obtener el precio según el día de la semana
-function getPrecioByDia(dia) {
-    const tarifa = tarifas.find(t => t.DiasSemana === dia);
-    return tarifa ? tarifa.Precio : "No disponible";
-}
 
 const getCines = async() => {
     const id = new URLSearchParams(window.location.search).get('id')
